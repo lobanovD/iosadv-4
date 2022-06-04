@@ -31,7 +31,7 @@ struct LoginView: View {
                         
                         Divider().frame(height: 1).background(Color("TFBorderColor"))
                         
-                        TextField("Password", text: $password)
+                        SecureField("Password", text: $password)
                             .padding()
                         
                     }
