@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var selectionTabView = 2
+    @State private var selectionTabView = "login"
     
     var body: some View {
         TabView(selection: $selectionTabView) {
@@ -18,14 +18,14 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Feed")
-                        
                 }
             
             LoginView()
                  .tabItem {
                     Image(systemName: "person.fill")
                     Text("Login")
-                  }
+                 }
+                 .tag("login")
             
             PlayerView()
                  .tabItem {
@@ -55,9 +55,6 @@ struct ContentView: View {
                
                 UITabBar.appearance().scrollEdgeAppearance = appearance
             }
-        
-        
-        
     }
 }
 
