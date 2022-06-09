@@ -11,6 +11,9 @@ struct LoginView: View {
     
     @State private var username: String = ""
     @State private var password: String = ""
+    @State private var showingAlert = false
+    @State private var successLogin = false
+    
     
     var body: some View {
         
@@ -40,29 +43,26 @@ struct LoginView: View {
                         .overlay(RoundedRectangle(cornerRadius: 10.0).strokeBorder(Color("TFBorderColor"), style: StrokeStyle(lineWidth: 1.0)))
                     }
                     
-
-                    Button(action: {
-                        //                        print(username, password)
+                    
+                    NavigationLink(destination: MainView(), isActive: $successLogin) { }
+                    
+                    Button("Log In",  action: {
                         
-                        
-                        
-                    }) {
-                        
-                        if LoginInspectorImpl.shared.loginSuccess(login: username, password: password) {
-                            NavigationLink(destination: MainView()) {
-                                Text("Log In")
-                                    .padding()
-                            }
+                        if LoginInspector.shared.loginSuccess(login: username, password: password) {
+                            successLogin = true
                         } else {
-                            Text("Log In")
-                                .padding()
+                            successLogin = false
+                            showingAlert = true
                         }
                         
-                    }
+                    })
+                    .padding()
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .background(Color("ButtonColor"))
                     .foregroundColor(.white)
                     .cornerRadius(10)
+                    .alert("Неверные данные авторизации", isPresented: $showingAlert) {
+                        Button("OK", role: .cancel) { } }
                     
                     Spacer()
                 }
@@ -78,7 +78,7 @@ struct LoginView_Previews: PreviewProvider {
         Group {
             LoginView()
                 .previewInterfaceOrientation(.portrait)
-          
+            
         }
     }
 }

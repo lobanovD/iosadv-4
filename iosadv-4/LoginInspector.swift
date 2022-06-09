@@ -8,15 +8,15 @@
 import Foundation
 import SwiftUI
 
-protocol LoginInspector {
+protocol LoginInspectorProtocol {
     
     func loginSuccess(login: String, password: String) -> Bool
     
 }
 
-final class LoginInspectorImpl: LoginInspector {
+final class LoginInspector: LoginInspectorProtocol {
     
-    static let shared = LoginInspectorImpl()
+    static let shared = LoginInspector()
     
     var login: String = "123"
     var password: String = "123"
