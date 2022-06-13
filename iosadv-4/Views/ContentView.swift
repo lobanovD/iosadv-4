@@ -19,11 +19,11 @@ struct ContentView: View {
         
         NavigationView {
             
-            if userLoginSuccess {
-                BioAuthView()
+            if !userLoginSuccess || userCanceledBioAuth {
+                LoginForm()
             }
             else {
-                LoginForm()
+                BioAuthView()
             }
 
         }

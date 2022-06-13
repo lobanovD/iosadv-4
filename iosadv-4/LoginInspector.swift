@@ -54,7 +54,7 @@ final class LoginInspector: LoginInspectorProtocol {
             let reason = "Хотите использовать Touch ID для авторизации?"
             
             // Вызов биометрии
-            context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason) { success, authenticationError in
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
                 
                 print(authenticationError)
                 
@@ -75,7 +75,7 @@ final class LoginInspector: LoginInspectorProtocol {
                     
                     UserDefaults.standard.set(false, forKey: "userBioSuccess")
         
-                    UserDefaults.standard.set(false, forKey: "isLogin")
+                    UserDefaults.standard.set(false, forKey: "userLoginSuccess")
 
                 
                  
