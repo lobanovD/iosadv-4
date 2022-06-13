@@ -98,6 +98,7 @@
 			children = (
 				1AD91D102831B06800190D39 /* ContentView.swift */,
 				1AF260162853E8F6001C1B23 /* LoginForm.swift */,
+				1AF260142852B11A001C1B23 /* BioAuthView.swift */,
 				1AD91D2B28330DE300190D39 /* FeedView.swift */,
 				1AD91D2D28330DEE00190D39 /* LoginView.swift */,
 				1A189EC828346EB2007F4DA8 /* PlayerView.swift */,
@@ -105,7 +106,6 @@
 				1A189ECC28346F2E007F4DA8 /* RecorderView.swift */,
 				1AF2601028515C2F001C1B23 /* MainView.swift */,
 				1ABA471F285687F80044AC85 /* FailAuthView.swift */,
-				1AF260142852B11A001C1B23 /* BioAuthView.swift */,
 				1ABA47232857E24D0044AC85 /* TempFile.swift */,
 			);
 			path = Views;

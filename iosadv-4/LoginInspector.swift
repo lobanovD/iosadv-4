@@ -49,6 +49,7 @@ final class LoginInspector: LoginInspectorProtocol {
         
         // Проверка, может ли устройство использовать биометрию
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            print(error)
             
             // Текст для TouchID (текст для FaceID задается в info.plist)
             let reason = "Хотите использовать Touch ID для авторизации?"
@@ -57,10 +58,14 @@ final class LoginInspector: LoginInspectorProtocol {
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
                 
                 print(authenticationError)
+                // вот тут обратить внимание
+                // если пользователь неудано прошел авторизацию - тут падает nil
+                print("@@", String(decoding: context.evaluatedPolicyDomainState!, as: UTF8.self))
+                
                 
                 // Если метод возвращает ошибку, значит пользователь отказался использовать биометрию, success при этом = false
                 if authenticationError != nil {
-                    UserDefaults.standard.set(true, forKey: "userCanceledBioAuth")
+//                    UserDefaults.standard.set(true, forKey: "userCanceledBioAuth")
                     print("Пользователь отказался от биометрии")
                 }
                 // Пользователь согласился использовать биометрию

@@ -19,9 +19,11 @@ struct ContentView: View {
         
         NavigationView {
             
+            // Если пользователь отказался от биометрии или авторизация по логин/паролю не произведена
             if !userLoginSuccess || userCanceledBioAuth {
                 LoginForm()
             }
+            // В противном случае пытаемся вызвать авторизацию по биометрии
             else {
                 BioAuthView()
             }

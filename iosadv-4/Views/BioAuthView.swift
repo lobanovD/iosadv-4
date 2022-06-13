@@ -58,15 +58,15 @@ struct BioAuthView: View {
             }
                 .onReceive(bioAuthNotify) { _ in
                     
-                    selection = UserDefaults.standard.bool(forKey: "isBioAuth")
-                    UserDefaults.standard.set(selection, forKey: "isLogin")
+                    selection = UserDefaults.standard.bool(forKey: "userBioSuccess")
+                    UserDefaults.standard.set(selection, forKey: "userBioSuccess")
                 
 
                 }
             
             NavigationLink(destination: MainView(), tag: true, selection: $selection) { EmptyView() }
             
-            NavigationLink(destination: MainView(), tag: false, selection: $selection) { EmptyView() }
+            NavigationLink(destination: LoginForm(), tag: false, selection: $selection) { EmptyView() }
             
 
         }
