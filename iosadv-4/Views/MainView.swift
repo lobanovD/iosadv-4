@@ -9,14 +9,17 @@ import SwiftUI
 
 struct MainView: View {
     
+    let text = ""
+    
     var body: some View {
         
-            Text("Авторизация прошла успешно!")
-                .padding()
-                .navigationBarBackButtonHidden(true)
-        
+        Text("Авторизация биометрии успешна")
+            .navigationBarBackButtonHidden(true)
+
     }
+        
 }
+    
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {

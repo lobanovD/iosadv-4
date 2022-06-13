@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct PlayerView: View {
+    
+    @State private var successLogin = UserDefaults.standard.bool(forKey: "isLogin")
+    @State private var successBioAuth = UserDefaults.standard.bool(forKey: "isBioAuth")
+    
     var body: some View {
         Text("Player View")
+            .onAppear {
+                print("successLogin - \(UserDefaults.standard.bool(forKey: "isLogin"))")
+                print("successBioAuth - \(UserDefaults.standard.bool(forKey: "isBioAuth"))")
+            }
     }
 }
 

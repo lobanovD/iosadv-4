@@ -10,6 +10,9 @@
 		1A189EC928346EB2007F4DA8 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A189EC828346EB2007F4DA8 /* PlayerView.swift */; };
 		1A189ECB28346F21007F4DA8 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A189ECA28346F21007F4DA8 /* VideoView.swift */; };
 		1A189ECD28346F2E007F4DA8 /* RecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A189ECC28346F2E007F4DA8 /* RecorderView.swift */; };
+		1ABA4720285687F90044AC85 /* FailAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA471F285687F80044AC85 /* FailAuthView.swift */; };
+		1ABA47222856AF290044AC85 /* SupportInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA47212856AF290044AC85 /* SupportInfo.swift */; };
+		1ABA47242857E24D0044AC85 /* TempFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA47232857E24D0044AC85 /* TempFile.swift */; };
 		1AD91D0F2831B06800190D39 /* iosadv_4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD91D0E2831B06800190D39 /* iosadv_4App.swift */; };
 		1AD91D112831B06800190D39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD91D102831B06800190D39 /* ContentView.swift */; };
 		1AD91D132831B07100190D39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD91D122831B07100190D39 /* Assets.xcassets */; };
@@ -18,12 +21,17 @@
 		1AD91D2E28330DEE00190D39 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD91D2D28330DEE00190D39 /* LoginView.swift */; };
 		1AF2601128515C2F001C1B23 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF2601028515C2F001C1B23 /* MainView.swift */; };
 		1AF260132851613C001C1B23 /* LoginInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF260122851613C001C1B23 /* LoginInspector.swift */; };
+		1AF260152852B11A001C1B23 /* BioAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF260142852B11A001C1B23 /* BioAuthView.swift */; };
+		1AF260172853E8F6001C1B23 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF260162853E8F6001C1B23 /* LoginForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A189EC828346EB2007F4DA8 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		1A189ECA28346F21007F4DA8 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		1A189ECC28346F2E007F4DA8 /* RecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderView.swift; sourceTree = "<group>"; };
+		1ABA471F285687F80044AC85 /* FailAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailAuthView.swift; sourceTree = "<group>"; };
+		1ABA47212856AF290044AC85 /* SupportInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportInfo.swift; sourceTree = "<group>"; };
+		1ABA47232857E24D0044AC85 /* TempFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempFile.swift; sourceTree = "<group>"; };
 		1AD91D0B2831B06800190D39 /* iosadv-4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iosadv-4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD91D0E2831B06800190D39 /* iosadv_4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosadv_4App.swift; sourceTree = "<group>"; };
 		1AD91D102831B06800190D39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +41,8 @@
 		1AD91D2D28330DEE00190D39 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1AF2601028515C2F001C1B23 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		1AF260122851613C001C1B23 /* LoginInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInspector.swift; sourceTree = "<group>"; };
+		1AF260142852B11A001C1B23 /* BioAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioAuthView.swift; sourceTree = "<group>"; };
+		1AF260162853E8F6001C1B23 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				1AD91D0E2831B06800190D39 /* iosadv_4App.swift */,
+				1ABA47212856AF290044AC85 /* SupportInfo.swift */,
 				1AD91D262831BF5600190D39 /* Views */,
 				1AF260122851613C001C1B23 /* LoginInspector.swift */,
 				1AD91D122831B07100190D39 /* Assets.xcassets */,
@@ -86,12 +97,16 @@
 			isa = PBXGroup;
 			children = (
 				1AD91D102831B06800190D39 /* ContentView.swift */,
+				1AF260162853E8F6001C1B23 /* LoginForm.swift */,
 				1AD91D2B28330DE300190D39 /* FeedView.swift */,
 				1AD91D2D28330DEE00190D39 /* LoginView.swift */,
 				1A189EC828346EB2007F4DA8 /* PlayerView.swift */,
 				1A189ECA28346F21007F4DA8 /* VideoView.swift */,
 				1A189ECC28346F2E007F4DA8 /* RecorderView.swift */,
 				1AF2601028515C2F001C1B23 /* MainView.swift */,
+				1ABA471F285687F80044AC85 /* FailAuthView.swift */,
+				1AF260142852B11A001C1B23 /* BioAuthView.swift */,
+				1ABA47232857E24D0044AC85 /* TempFile.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,12 +183,17 @@
 			files = (
 				1AF260132851613C001C1B23 /* LoginInspector.swift in Sources */,
 				1A189ECB28346F21007F4DA8 /* VideoView.swift in Sources */,
+				1AF260172853E8F6001C1B23 /* LoginForm.swift in Sources */,
+				1ABA47242857E24D0044AC85 /* TempFile.swift in Sources */,
 				1AF2601128515C2F001C1B23 /* MainView.swift in Sources */,
 				1AD91D112831B06800190D39 /* ContentView.swift in Sources */,
 				1AD91D2C28330DE300190D39 /* FeedView.swift in Sources */,
 				1AD91D2E28330DEE00190D39 /* LoginView.swift in Sources */,
 				1A189EC928346EB2007F4DA8 /* PlayerView.swift in Sources */,
+				1ABA47222856AF290044AC85 /* SupportInfo.swift in Sources */,
+				1AF260152852B11A001C1B23 /* BioAuthView.swift in Sources */,
 				1A189ECD28346F2E007F4DA8 /* RecorderView.swift in Sources */,
+				1ABA4720285687F90044AC85 /* FailAuthView.swift in Sources */,
 				1AD91D0F2831B06800190D39 /* iosadv_4App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,11 +326,13 @@
 				DEVELOPMENT_TEAM = 5BFVZ4T283;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,11 +357,13 @@
 				DEVELOPMENT_TEAM = 5BFVZ4T283;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
